@@ -1,6 +1,7 @@
 // iterators4.rs
 
 pub fn factorial(num: u64) -> u64 {
+    (1..num + 1).into_iter().fold(1, |result, item| result * item)
     // Complete this function to return factorial of num
     // Do not use:
     // - return
